@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Machine Learning Algorithms</title>
+    <meta name="description" content="ML Algo. based on SKLearn Llibrary of python" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Devansh">
+    <link rel="stylesheet" href="linkitall_assets/style.css?v=0">
+    <link rel="icon" href="favicon.ico">
+<style>
+.board {
+    width: 1510px;
+    height: 1350px;
+}
+.node {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+    <section id="app">
+        <div id="link-view-panel">
+            <button class="close-button" onclick="closeLinkViewPanel()">Close (Esc)</button>
+            <div id="link-view-inner">
+            </div>
+        </div>
+        <div class="board" id="board">
+            
+            <div class="node" style="left: 600px; top: 0px;">
+
+                <div class="link-panel">
+                    
+                </div>
+
+                <div class="node-content" id="00000">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            Machine Learning Algorithms
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00000_00001">
+                            <a href="javascript:showNode('00001')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 600px; top: 300px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00000_00001">
+                            <a href="javascript:showNode('00000')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00001">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/SK Learn.pdf#view=fit\u0026sk-learn', true)"
+                               onclick="openNodeLink(event, 'resources\/SK Learn.pdf#view=fit\u0026sk-learn', false)">
+                                Based on SK Learn
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> It is a python library. Click to know more </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00001_00002">
+                            <a href="javascript:showNode('00002')">+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00001_00003">
+                            <a href="javascript:showNode('00003')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 300px; top: 600px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00001_00002">
+                            <a href="javascript:showNode('00001')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00002">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Supervised Learning.pdf#view=fit\u0026supervised-learning', true)"
+                               onclick="openNodeLink(event, 'resources\/Supervised Learning.pdf#view=fit\u0026supervised-learning', false)">
+                                Supervised Learning
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00002_00004">
+                            <a href="javascript:showNode('00004')">+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00002_00005">
+                            <a href="javascript:showNode('00005')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 900px; top: 600px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00001_00003">
+                            <a href="javascript:showNode('00001')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00003">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Unsupervised learning.pdf#view=fit\u0026unspervised-learning', true)"
+                               onclick="openNodeLink(event, 'resources\/Unsupervised learning.pdf#view=fit\u0026unspervised-learning', false)">
+                                Unsupervised Learning
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00003_00006">
+                            <a href="javascript:showNode('00006')">+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00003_00007">
+                            <a href="javascript:showNode('00007')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 0px; top: 900px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00002_00004">
+                            <a href="javascript:showNode('00002')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00004">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Regression.pdf#view=fit\u0026regression', true)"
+                               onclick="openNodeLink(event, 'resources\/Regression.pdf#view=fit\u0026regression', false)">
+                                Regression
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00004_00008">
+                            <a href="javascript:showNode('00008')">+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00004_00009">
+                            <a href="javascript:showNode('00009')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 400px; top: 900px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00002_00005">
+                            <a href="javascript:showNode('00002')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00005">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Classification.pdf#view=fit\u0026classification', true)"
+                               onclick="openNodeLink(event, 'resources\/Classification.pdf#view=fit\u0026classification', false)">
+                                Classification
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00005_00010">
+                            <a href="javascript:showNode('00010')">+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dot-outer">
+                        <div class="dot link-source" id="D_00005_00011">
+                            <a href="javascript:showNode('00011')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 800px; top: 900px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00003_00006">
+                            <a href="javascript:showNode('00003')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00006">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/K Means.pdf#view=fit\u0026k-means', true)"
+                               onclick="openNodeLink(event, 'resources\/K Means.pdf#view=fit\u0026k-means', false)">
+                                K Means
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 1200px; top: 900px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00003_00007">
+                            <a href="javascript:showNode('00003')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00007">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/PCA.pdf#view=fit\u0026pca', true)"
+                               onclick="openNodeLink(event, 'resources\/PCA.pdf#view=fit\u0026pca', false)">
+                                PCA
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 0px; top: 1200px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00004_00008">
+                            <a href="javascript:showNode('00004')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00008">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Linear regressor.pdf#view=fit\u0026linear-regressor', true)"
+                               onclick="openNodeLink(event, 'resources\/Linear regressor.pdf#view=fit\u0026linear-regressor', false)">
+                                Linear Regressor
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 400px; top: 1200px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00004_00009">
+                            <a href="javascript:showNode('00004')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00009">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Random Forest regressor.pdf#view=fit\u0026random-forest-regressor', true)"
+                               onclick="openNodeLink(event, 'resources\/Random Forest regressor.pdf#view=fit\u0026random-forest-regressor', false)">
+                                Random Forest Regressor
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 800px; top: 1200px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00005_00010">
+                            <a href="javascript:showNode('00005')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00010">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Logistic Regression.pdf#view=fit\u0026logistic-regression', true)"
+                               onclick="openNodeLink(event, 'resources\/Logistic Regression.pdf#view=fit\u0026logistic-regression', false)">
+                                Logistic Regression
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                </div>
+
+            </div>
+            
+            <div class="node" style="left: 1200px; top: 1200px;">
+
+                <div class="link-panel">
+                    
+                    <div class="dot-outer">
+                        <div class="dot" id="U_00005_00011">
+                            <a href="javascript:showNode('00005')">+</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="node-content" id="00011">
+                    <div class="node-content-inner">
+                        <div class="title">
+                            
+                            <a href="javascript:void(0)"
+                               onauxclick="openNodeLink(event, 'resources\/Random forest classifier.pdf#view=fit\u0026random-forest-classifier', true)"
+                               onclick="openNodeLink(event, 'resources\/Random forest classifier.pdf#view=fit\u0026random-forest-classifier', false)">
+                                Random Forest Classifier
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="subtitle"> click to know more. </div>
+                        
+                    </div>
+                </div>
+
+                <div class="link-panel">
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+    <script id="buildconfig" type="application/json">
+    {
+        "ArrowDirection": "child2parent"
+    }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.5/leader-line.min.js"></script>
+    
+    <script src="linkitall_assets/main.js"></script>
+</body>
+</html>

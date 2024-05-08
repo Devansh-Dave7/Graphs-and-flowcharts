@@ -1,0 +1,133 @@
+head-config:
+    title: Machine Learning Algorithms
+    description: ML Algo. based on SKLearn Llibrary of python
+    author: Devansh 
+    
+
+algo-config:
+    level-strategy: top2bottom
+    arrow-direction: child2parent
+    node-sorting: ascend
+
+resources:
+    classification: resources/Classification.pdf#view=fit
+    k_means: resources/K Means.pdf#view=fit
+    linear_regressor: resources/Linear regressor.pdf#view=fit
+    logistic_regression: resources/Logistic Regression.pdf#view=fit
+    pca: resources/PCA.pdf#view=fit
+    random_forest_classifier: resources/Random forest classifier.pdf#view=fit
+    random_forest_regressor: resources/Random Forest regressor.pdf#view=fit
+    regression: resources/Regression.pdf#view=fit
+    sk_learn: resources/SK Learn.pdf#view=fit
+    supervised_learning: resources/Supervised Learning.pdf#view=fit
+    unsupervised_learning: resources/Unsupervised learning.pdf#view=fit
+
+
+nodes:
+    - name: machine_learning_algo
+      title: Machine Learning Algorithms
+      # linkto:
+          # resource defined in section `resources`
+          
+          # the id of the target section
+         # target: machine-learning-algo
+      depends-on:
+          - sk_learn
+
+    - name: sk_learn
+      title: Based on SK Learn
+      subtitle: It is a python library. Click to know more
+      # If title is not provided, it will be guessed based on name
+      linkto:
+          resource: sk_learn
+          target: sk-learn
+      depends-on:
+          - supervised_learning
+          - unsupervised_learning
+
+    - name: supervised_learning
+      title: Supervised Learning
+      subtitle: click to know more.
+      linkto:
+          resource: supervised_learning
+          target: supervised-learning
+      depends-on:
+          - regression
+          - classification
+
+    - name: unsupervised_learning
+      title: Unsupervised Learning
+      subtitle: click to know more.
+      linkto:
+          resource: unsupervised_learning
+          target: unspervised-learning
+      depends-on:
+          - k_means
+          - pca
+          
+
+    - name: regression
+      title: Regression
+      subtitle: click to know more.
+      linkto:
+          resource: regression
+          target: regression
+      depends-on: 
+          - linear_regressor
+          - random_forest_regressor    
+
+    - name: classification
+      title: Classification
+      subtitle: click to know more.
+      linkto:
+          resource: classification
+          target: classification
+      depends-on: 
+          - logistic_regression
+          - random_forest_classifier    
+
+    - name: k_means
+      title: K Means
+      subtitle: click to know more.
+      linkto:
+          resource: k_means
+          target: k-means
+
+    - name: pca      
+      title: PCA
+      subtitle: click to know more
+      linkto:
+          resource: pca
+          target: pca
+
+    - name: linear_regressor
+      title: Linear Regressor
+      subtitle: click to know more.
+      linkto:
+          resource: linear_regressor
+          target: linear-regressor
+      
+
+    - name: random_forest_regressor  
+      title: Random Forest Regressor  
+      subtitle: click to know more
+      linkto:
+          resource: random_forest_regressor  
+          target: random-forest-regressor
+
+    - name: logistic_regression
+      title: Logistic Regression
+      subtitle: click to know more.
+      linkto:
+          resource: logistic_regression
+          target: logistic-regression
+
+
+    - name: random_forest_classifier  
+      title: Random Forest Classifier
+      subtitle: click to know more.
+      linkto:
+          resource: random_forest_classifier
+          target: random-forest-classifier  
+
+   
